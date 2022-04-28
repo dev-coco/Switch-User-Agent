@@ -1,0 +1,138 @@
+body {
+	width: 400px;
+}
+
+#ua-custom {
+	width: 75%;
+}
+
+#current-ua {
+	font-size: 13px;
+}
+
+input[type=button] {
+	margin-top: 5px;
+}
+
+.green {
+	background-color: #2ea44f;
+}
+
+.orange {
+	background-color: #fa6400;
+}
+
+.button {
+  align-items: center;
+  background-clip: padding-box;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.orange:hover,
+.orange:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.green:hover,
+.green:focus {
+  background-color: #64a275;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.orange:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.green:active {
+  background-color: #268140;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.select select {
+  -webkit-appearance: none;
+  border-radius: 0.375em;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: calc(0.75em - 1px);
+
+  padding-top: calc(0.5em - 1px);
+
+}
+
+.select select:focus, .select select:active {
+  outline: none;
+}
+
+.select::after {
+  border: 3px solid transparent;
+  border-radius: 2px;
+  border-right: 0;
+  border-top: 0;
+  content: " ";
+  height: 0.625em;
+  margin-top: -0.4375em;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: rotate(-45deg);
+  width: 0.625em;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.select {
+  display: inline-block;
+  max-width: 100%;
+  position: relative;
+  vertical-align: top;
+}
+
+.select::after {
+  border-color: #485fc7;
+  right: 1.125em;
+  z-index: 4;
+}
+
+.select select {
+  padding-right: 2.5em;
+}
+
+.select.is-primary select {
+  border-color: #00d1b2;
+}

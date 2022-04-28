@@ -1,0 +1,23 @@
+<!DOCTYPE html lang="en">
+<meta charset="utf-8">
+<title>Popup</title>
+<link rel="stylesheet" type="text/css" href="popup.css">
+<form>
+  <div id="current">
+    <h1>当前浏览器标识</h1>
+    <p id="current-ua"></p>
+  </div>
+
+  <div>
+    <h1>修改标识</h1>
+    <p>
+      <div class="select is-primary">
+        <select id="ua-predefined"></select>
+      </div>
+      <br>
+      <input type="button" class="button green" id="submit-ua-predefined" value="修改">
+      <input type="button" class="button orange" id="submit-ua-reset" value="重置">
+    </p>
+  </div>
+</form>
+<script src="popup.js"></script>
